@@ -24,7 +24,6 @@ export default function Home() {
         desc: "I'm a passionate web developer and designer coding beautiful websites and apps.",
       }}
     >
-      HERO
       {/* <Hero /> */}
       <div className="mt-20 space-y-32">
         <Projects />

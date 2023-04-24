@@ -6,7 +6,10 @@ export const kebabCase = (str: string) =>
 
 export const kebabArray = (arr: any[]) => arr.map((item) => kebabCase(item));
 
-export const randomNumberText = (finalNum: string, setNumber) => {
+export const randomNumberText = (
+  finalNum: string,
+  setNumber: (num: string) => void
+) => {
   let count = 0;
   let newNum = "";
   const interval = setInterval(() => {

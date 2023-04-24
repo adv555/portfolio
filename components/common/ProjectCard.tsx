@@ -2,8 +2,13 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { kebabCase } from "@/utils/utils";
+import { Project } from "@/types";
 
-const ProjectCard = ({ project }) => {
+type ProjectCardProps = {
+  project: Project;
+};
+
+const ProjectCard = ({ project }: ProjectCardProps) => {
   return (
     <div
       className="max-w-sm mx-auto flex flex-col projects-center md:projects-start md:justify-center"
@@ -46,7 +51,7 @@ const ProjectCard = ({ project }) => {
         </div>
         <p className="text-fun-gray text-left text-sm">{project.desc}</p>
         <ul className="flex flex-wrap items-center mt-2 -ml-2 list-none">
-          {project.tags.map((tag, index) => {
+          {project.tags.map((tag) => {
             return (
               <li key={tag}>
                 <Link href={`/projects/tag/${kebabCase(tag)}`}>

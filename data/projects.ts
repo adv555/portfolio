@@ -1,6 +1,7 @@
 // import { kebabCase, kebabArray } from "@/utils/utils";
 
 import { Project } from "@/types";
+import { kebabCase } from "@/utils/utils";
 
 const projects: Project[] = [
   {
@@ -77,12 +78,12 @@ const projects: Project[] = [
   },
 ];
 
-export const allTags = [];
+export const allTags: string[] = [];
 
-// projects.forEach((project) => {
-//   project.tags.forEach((tag) => !allTags.includes(tag) && allTags.push(tag));
-// });
+projects.forEach((project: Project) => {
+  project.tags.forEach((tag) => !allTags?.includes(tag) && allTags.push(tag));
+});
 
-// export const allKebabTags = allTags.map((tag) => kebabCase(tag));
+export const allKebabTags = allTags.map((tag) => kebabCase(tag));
 
 export default projects;
