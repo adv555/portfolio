@@ -1,7 +1,8 @@
 import React from "react";
 import Head from "next/head";
+import { MobileNavbar, Navbar } from "@/components/common";
 // import MobileNavbar from "../global/MobileNavbar";
-// import Navbar from "../global/Navbar";
+
 // import Footer from "../global/Footer";
 
 type PageProps = {
@@ -16,8 +17,8 @@ type PageProps = {
 function Page({ currentPage, meta: { title, desc }, children }: PageProps) {
   const pageTitle = `${
     currentPage === "Home"
-      ? "Brayden Wright - Web Developer, Designer, Creator."
-      : `${currentPage} - BraydenTW.io`
+      ? "Portfolio - Web Developer, Designer, Creator."
+      : `${currentPage} - Portfolio`
   }`;
   console.log(currentPage);
   return (
@@ -50,12 +51,14 @@ function Page({ currentPage, meta: { title, desc }, children }: PageProps) {
         <meta name="description" content={desc} />
 
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://braydentw.io/" />
+        <meta property="og:url" content="#" />
+        {/* <meta property="og:url" content="https://braydentw.io/" /> */}
         <meta property="og:title" content={pageTitle} />
         <meta property="og:description" content={desc} />
         <meta
           property="og:image"
-          content="https://braydentw.io/static/misc/og.png"
+          content="#"
+          // content="https://braydentw.io/static/misc/og.png"
         />
 
         <meta property="twitter:card" content="summary_large_image" />
@@ -64,16 +67,17 @@ function Page({ currentPage, meta: { title, desc }, children }: PageProps) {
         <meta property="twitter:description" content={desc} />
         <meta
           property="twitter:image"
-          content="https://braydentw.io/static/misc/og.png"
+          content="#"
+          // content="https://braydentw.io/static/misc/og.png"
         ></meta>
       </Head>
 
-      <main className="p-5 w-full flex-1 text-center">
+      <main className="styledMainContainer p-5 w-full flex-1 text-center">
         <div className="hidden sm:block z-100">
-          {/* <Navbar currentPage={currentPage} /> */}
+          <Navbar currentPage={currentPage} />
         </div>
         <div className="-m-5 block sm:hidden z-100">
-          {/* <MobileNavbar /> */}
+          <MobileNavbar />
         </div>
         {children}
       </main>

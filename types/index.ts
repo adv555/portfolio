@@ -1,3 +1,8 @@
+export type Route = {
+  title: string;
+  path: string;
+};
+
 export type Project = {
   id: number;
   title: string;
