@@ -1,7 +1,8 @@
 import { SVGProps, useEffect, useState } from "react";
-import useDelayedRender from "use-delayed-render";
+// import useDelayedRender from "use-delayed-render";
 import Link from "next/link";
 import { routes } from "@/data/routes";
+import useDelayedRender from "@/hooks/use-delay-render";
 
 export default function MobileNavbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
