@@ -5,7 +5,7 @@ import projects from "@/data/projects";
 
 const Projects = () => {
   return (
-    <section className="container h-screen flex flex-col text-left justify-between pt-8 relative">
+    <section className="container m-auto h-screen flex flex-col text-left justify-between pt-8 relative">
       <div id="projects">
         <SectionTitle title="Some Things I’ve Built." />
       </div>

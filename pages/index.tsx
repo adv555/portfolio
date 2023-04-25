@@ -3,6 +3,9 @@
 import Page from "@/components/utility/Page";
 import Hero from "@/components/sections/Hero";
 import Projects from "@/components/sections/Projects";
+import { Social, Email } from "@/components/common";
+import styled from "styled-components";
+
 // import Skills from "@/components/home/Skills";
 // import Posts from "@/components/home/Posts";
 // import Testimonials from "@/components/home/Testimonials";
@@ -16,8 +19,15 @@ import Projects from "@/components/sections/Projects";
 //     },
 //   };
 // }
+const StyledContent = styled.div`
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+`;
 
 export default function Home() {
+  const isHome = true;
+
   return (
     <Page
       currentPage="Home"
@@ -25,14 +35,14 @@ export default function Home() {
         desc: "I'm a passionate web developer and designer coding beautiful websites and apps.",
       }}
     >
-      <Hero />
-      <div className="mt-20 space-y-32">
-        <Projects />
-        {/* <Skills /> */}
-        {/* <Testimonials /> */}
-        {/* <Posts allPosts={allPosts} /> */}
-      </div>
-      {/* <CTA /> */}
+      <StyledContent>
+        <Hero />
+        <div className="mt-20 space-y-32">
+          <Projects />
+        </div>
+        <Email isHome={isHome} />
+        <Social isHome={isHome} />
+      </StyledContent>
     </Page>
   );
 }

@@ -1,7 +1,6 @@
 import React from "react";
 import Head from "next/head";
 import { MobileNavbar, Navbar } from "@/components/common";
-// import MobileNavbar from "../global/MobileNavbar";
 
 // import Footer from "../global/Footer";
 

@@ -18,6 +18,13 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "data/config.js",
+    "components/common/Side.tsx",
+    "components/icons/bookmark.js"
+  ],
   "exclude": ["node_modules"]
 }
