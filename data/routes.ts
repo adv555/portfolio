@@ -5,16 +5,20 @@ export const routes: Route[] = [
     title: "Home",
     path: "/",
   },
-  // {
-  //   title: "Blog",
-  //   path: "/blog",
-  // },
+  {
+    title: "About",
+    path: "/#about",
+  },
+  {
+    title: "Skills",
+    path: "/#skills",
+  },
   {
     title: "Projects",
-    path: "/projects",
+    path: "/#projects",
   },
-  //   {
-  //     title: "Designs",
-  //     path: "/designs",
-  //   },
+  {
+    title: "Contact",
+    path: "/#contact",
+  },
 ];

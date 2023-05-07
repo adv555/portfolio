@@ -1,5 +1,3 @@
-// import { kebabCase, kebabArray } from "@/utils/utils";
-
 import { Project } from "@/types";
 import { kebabCase } from "@/utils/utils";
 
@@ -53,7 +51,7 @@ const projects: Project[] = [
     tags: ["Python", "CLI"],
   },
   {
-    id: 5,
+    id: 6,
     title: "Project 6",
     desc: "Description Project 6",
     img: "/images/6.jpg",
@@ -61,7 +59,7 @@ const projects: Project[] = [
     tags: ["Python", "CLI"],
   },
   {
-    id: 6,
+    id: 7,
     title: "Project 7",
     desc: "Description Project 7",
     img: "/images/7.jpg",
@@ -69,7 +67,7 @@ const projects: Project[] = [
     tags: ["Python", "CLI"],
   },
   {
-    id: 7,
+    id: 8,
     title: "Project 8",
     desc: "Description Project 8",
     img: "/images/8.jpg",
@@ -78,12 +76,12 @@ const projects: Project[] = [
   },
 ];
 
-export const allTags: string[] = [];
+const allTags: string[] = [];
 
 projects.forEach((project: Project) => {
   project.tags.forEach((tag) => !allTags?.includes(tag) && allTags.push(tag));
 });
 
-export const allKebabTags = allTags.map((tag) => kebabCase(tag));
+const allKebabTags = allTags.map((tag) => kebabCase(tag));
 
-export default projects;
+export { projects, allTags, allKebabTags };

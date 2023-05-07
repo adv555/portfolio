@@ -3,10 +3,7 @@ import { Link as ScrollLink } from "react-scroll";
 
 function Hero() {
   return (
-    <section
-      className="container h-screen relative heroElem w-screen pt-20 pb-40 m-auto flex justify-center text-center flex-col items-center z-1"
-      // style={{ maxWidth: "1200px" }}
-    >
+    <section className="section text-center heroElem justify-center items-center pt-20 pb-40 z-1">
       <p className="text-xl mb-5">Hey, my name is...</p>
       <h1 className="heroTitle inline-block max-w-2xl lg:max-w-4xl  w-auto relative text-5xl md:text-6xl lg:text-7xl tracking-tighter mb-10 font-bold heroShinyBg">
         I enjoy <span className="heroShiny1 text-fun-pink">building</span>{" "}

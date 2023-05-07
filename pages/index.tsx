@@ -1,15 +1,12 @@
-// import CTA from "@/components/home/CTA";
-
 import Page from "@/components/utility/Page";
-import Hero from "@/components/sections/Hero";
-import Projects from "@/components/sections/Projects";
-import { Social, Email } from "@/components/common";
+import Hero from "@/components/home/Hero";
+import Projects from "@/components/home/Projects";
 import styled from "styled-components";
+import About from "@/components/home/About";
+import Skills from "@/components/home/Skills";
+import Contacts from "@/components/home/Contacts";
+import { Social, Email } from "@/components/common";
 
-// import Skills from "@/components/home/Skills";
-// import Posts from "@/components/home/Posts";
-// import Testimonials from "@/components/home/Testimonials";
-// import { allPosts } from "contentlayer/generated";
 // import { GetStaticProps } from "next";
 
 // export const getStaticProps: GetStaticProps = async () => {
@@ -37,9 +34,10 @@ export default function Home() {
     >
       <StyledContent>
         <Hero />
-        <div className="mt-20 space-y-32">
-          <Projects />
-        </div>
+        <About />
+        <Skills />
+        <Projects />
+        <Contacts />
         <Email isHome={isHome} />
         <Social isHome={isHome} />
       </StyledContent>

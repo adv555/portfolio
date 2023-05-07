@@ -1,11 +1,11 @@
 import React from "react";
 import Link from "next/link";
 import { SectionTitle, ProjectCard } from "../common";
-import projects from "@/data/projects";
+import { projects } from "@/data/projects";
 
 const Projects = () => {
   return (
-    <section className="container m-auto h-screen flex flex-col text-left justify-between pt-8 relative">
+    <section className="section text-left justify-between pt-8 md:px-10 overflow-auto ">
       <div id="projects">
         <SectionTitle title="Some Things I’ve Built." />
       </div>
