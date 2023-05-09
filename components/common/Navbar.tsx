@@ -9,7 +9,7 @@ type NavbarProps = {
 function Navbar({ currentPage }: NavbarProps) {
   return (
     <nav className="flex items-center justify-between">
-      <li className="list-none font-bold text-lg cursor-pointer">
+      <div className="list-none font-bold text-lg cursor-pointer">
         <Link href="/">
           <span className="font-black text-xl flex items-center">
             <img
@@ -29,23 +29,33 @@ function Navbar({ currentPage }: NavbarProps) {
             })}
           </span>
         </Link>
-      </li>
-      <ul className="flex items-center space-x-10">
-        {routes.map((item, index) => {
-          return (
-            <li
-              key={index}
-              className={`list-none text-white ${
-                currentPage === item.title
-                  ? "opacity-100"
-                  : "opacity-40 hover:opacity-100 transition-opacity"
-              }`}
-            >
-              <Link href={item.path}>{item.title}</Link>
-            </li>
-          );
-        })}
-      </ul>
+      </div>
+      <div className="flex items-center">
+        <ul className="flex items-center space-x-10">
+          {routes.map((item, index) => {
+            return (
+              <li
+                key={index}
+                className={`list-none text-white ${
+                  currentPage === item.title
+                    ? "opacity-100"
+                    : "opacity-40 hover:opacity-100 transition-opacity"
+                }`}
+              >
+                <Link href={item.path}>{item.title}</Link>
+              </li>
+            );
+          })}
+        </ul>
+        <Link
+          href="/resume.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="ml-10 border border-fun-pink text-center w-full px-6 py-2 rounded-lg text-fun-pink hover:bg-fun-pink hover:text-white transition-colors cursor-pointer "
+        >
+          Resume
+        </Link>
+      </div>
     </nav>
   );
 }

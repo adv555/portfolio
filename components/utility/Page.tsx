@@ -1,8 +1,7 @@
 import React from "react";
 import Head from "next/head";
-import { MobileNavbar, Navbar } from "@/components/common";
-
-// import Footer from "../global/Footer";
+import { Footer, MobileNavbar, Navbar } from "@/components/common";
+import { Social, Email } from "@/components/common";
 
 type PageProps = {
   currentPage: string;
@@ -14,6 +13,7 @@ type PageProps = {
 };
 
 function Page({ currentPage, meta: { title, desc }, children }: PageProps) {
+  const isHome = true;
   const pageTitle = `${
     currentPage === "Home"
       ? "Portfolio - Web Developer, Designer, Creator."
@@ -80,7 +80,9 @@ function Page({ currentPage, meta: { title, desc }, children }: PageProps) {
         </div>
         {children}
       </main>
-      {/* <Footer /> */}
+      <Email isHome={isHome} />
+      <Social isHome={isHome} />
+      <Footer />
     </div>
   );
 }

@@ -54,4 +54,56 @@ export const skills: Skill[] = [
     title: "Figma",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg",
   },
+  {
+    title: "Python",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
+  },
+  {
+    title: "Django",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg",
+  },
+  // {
+  //   title: "Flask",
+  //   icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg",
+  // },
+  {
+    title: "FastAPI",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg",
+  },
+  {
+    title: "TensorFlow",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg",
+  },
+  {
+    title: "Jupyter",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original-wordmark.svg",
+  },
+  {
+    title: "Pandas",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg",
+  },
+  {
+    title: "Matplotlib",
+    icon: "https://res.cloudinary.com/myfinance/image/upload/v1683668099/media/Matplotlib_icon_i95jt5.svg",
+  },
+  {
+    title: "Seaborn",
+    icon: "https://res.cloudinary.com/myfinance/image/upload/v1683668093/media/seaborn-seeklogo.com_bvvdcx.svg",
+  },
+  {
+    title: "Numpy",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg",
+  },
+  {
+    title: "Keras",
+    icon: "https://res.cloudinary.com/myfinance/image/upload/v1683667021/media/Keras_logo_jioozy.svg",
+  },
+  {
+    title: "SQLAlchemy",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlalchemy/sqlalchemy-original.svg",
+  },
+  {
+    title: "PostgreSQL",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
+  },
 ];

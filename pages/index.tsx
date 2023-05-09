@@ -32,15 +32,15 @@ export default function Home() {
         desc: "I'm a passionate web developer and designer coding beautiful websites and apps.",
       }}
     >
-      <StyledContent>
-        <Hero />
-        <About />
-        <Skills />
-        <Projects />
-        <Contacts />
-        <Email isHome={isHome} />
-        <Social isHome={isHome} />
-      </StyledContent>
+      {/* <StyledContent> */}
+      <Hero />
+      <About />
+      <Skills />
+      <Projects />
+      <Contacts />
+      {/* <Email isHome={isHome} /> */}
+      {/* <Social isHome={isHome} /> */}
+      {/* </StyledContent> */}
     </Page>
   );
 }
