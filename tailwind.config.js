@@ -35,10 +35,12 @@ module.exports = {
         "fun-gray-dark": "#1F1F20",
         "fun-gray-darkest": "#141414",
         "fun-pink": "#00c7ff",
+        // "fun-pink": "#64ffda",
         "fun-pink-darker": "#000f2e",
         "fun-pink-darkest": "#000c24",
         "fun-pink-dark": "#192742",
         "fun-pink-light": "#009ac5",
+        // "fun-pink-light": "rgba(100, 255, 218, 0.1)",
       },
       rotate: {
         360: "360deg",
