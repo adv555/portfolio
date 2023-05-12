@@ -1,67 +1,71 @@
-module.exports = {
-  email: "adv55577@gmail.com",
+export const siteName = "BoldyshevaOV";
+export const email = "adv55577@gmail.com";
+export const gitHub = "#";
+export const resume = "/resume.pdf";
+// export const resume =
+//   "https://drive.google.com/file/d/1PjsTHLMZ-6cmeQOgCOm9AcFpCpA9npAo/view?usp=sharing";
 
-  socialMedia: [
-    {
-      name: "GitHub",
-      url: "#",
-    },
-    {
-      name: "Instagram",
-      url: "#",
-    },
-    {
-      name: "Twitter",
-      url: "#",
-    },
-    {
-      name: "Linkedin",
-      url: "#",
-    },
-    {
-      name: "Codepen",
-      url: "#",
-    },
+export const socialMedia = [
+  {
+    name: "GitHub",
+    url: "#",
+  },
+  {
+    name: "Instagram",
+    url: "#",
+  },
+  {
+    name: "Twitter",
+    url: "#",
+  },
+  {
+    name: "Linkedin",
+    url: "#",
+  },
+  {
+    name: "Codepen",
+    url: "#",
+  },
+];
+
+export const navLinks = [
+  {
+    title: "Home",
+    path: "/",
+  },
+  {
+    title: "About",
+    path: "/#about",
+  },
+  {
+    title: "Skills",
+    path: "/#skills",
+  },
+  {
+    title: "Projects",
+    path: "/#projects",
+  },
+  {
+    title: "Contact",
+    path: "/#contact",
+  },
+];
+
+export const about = {
+  title:
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem odio est perspiciatis molestias sit! Sed doloremque deserunt nonofficiis rerum, repudiandae incidunt, vero unde suscipit autem hicanimi qui consectetur!",
+  description:
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem odio est perspiciatis molestias sit! Sed doloremque deserunt nonofficiis rerum, repudiandae incidunt, vero unde suscipit autem hicanimi qui consectetur!",
+  skills: [
+    "JavaScript (ES6+)",
+    "TypeScript",
+    "React",
+    "Redux",
+    "Node.js",
+    "Express",
+    "MongoDB",
+    "PostgreSQL",
   ],
-
-  navLinks: [
-    {
-      name: "About",
-      url: "/#about",
-    },
-    {
-      name: "Experience",
-      url: "/#jobs",
-    },
-    {
-      name: "Work",
-      url: "/#projects",
-    },
-    {
-      name: "Contact",
-      url: "/#contact",
-    },
-  ],
-
-  // colors: {
-  //   green: "#64ffda",
-  //   navy: "#0a192f",
-  //   darkNavy: "#020c1b",
-  // },
-
-  // srConfig: (delay = 200, viewFactor = 0.25) => ({
-  //   origin: "bottom",
-  //   distance: "20px",
-  //   duration: 500,
-  //   delay,
-  //   rotate: { x: 0, y: 0, z: 0 },
-  //   opacity: 0,
-  //   scale: 1,
-  //   easing: "cubic-bezier(0.645, 0.045, 0.355, 1)",
-  //   mobile: true,
-  //   reset: false,
-  //   useDelay: "always",
-  //   viewFactor,
-  //   viewOffset: { top: 0, right: 0, bottom: 0, left: 0 },
-  // }),
+  ImageLink:
+    "https://res.cloudinary.com/myfinance/image/upload/v1680388105/media/Users/xxx/8_nh46zh.webp",
 };

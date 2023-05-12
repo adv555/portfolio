@@ -1,7 +1,12 @@
 import React from "react";
 import Head from "next/head";
-import { Footer, MobileNavbar, Navbar } from "@/components/common";
-import { Social, Email } from "@/components/common";
+import {
+  Footer,
+  MobileNavbar,
+  Navbar,
+  Social,
+  Email,
+} from "@/components/common";
 
 type PageProps = {
   currentPage: string;
@@ -12,7 +17,11 @@ type PageProps = {
   children?: JSX.Element | JSX.Element[];
 };
 
-function Page({ currentPage, meta: { title, desc }, children }: PageProps) {
+function PageLayout({
+  currentPage,
+  meta: { title, desc },
+  children,
+}: PageProps) {
   const isHome = true;
   const pageTitle = `${
     currentPage === "Home"
@@ -87,4 +96,4 @@ function Page({ currentPage, meta: { title, desc }, children }: PageProps) {
   );
 }
 
-export default Page;
+export default PageLayout;

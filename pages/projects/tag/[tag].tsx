@@ -1,9 +1,7 @@
 import { GetStaticProps, GetStaticPaths } from "next";
 import Link from "next/link";
-import Page from "@/components/utility/Page";
-
+import { PageLayout } from "@/components/common";
 import { projects, allKebabTags, allTags } from "@/data/projects";
-
 import { kebabCase, kebabArray } from "@/utils/utils";
 import Projects from "@/components/projects/Projects";
 import Heading from "@/components/projects/Heading";
@@ -56,7 +54,7 @@ export const getStaticProps = async ({
 function PostPage({ filteredProjects, tag }: PostPageProps) {
   const capsTag = allTags[allKebabTags.indexOf(tag)];
   return (
-    <Page
+    <PageLayout
       currentPage="Projects"
       meta={{
         title: `${capsTag} Projects`,
@@ -72,7 +70,7 @@ function PostPage({ filteredProjects, tag }: PostPageProps) {
         </div>
       </Link>
       <More />
-    </Page>
+    </PageLayout>
   );
 }
 

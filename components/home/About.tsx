@@ -1,25 +1,7 @@
 import React from "react";
-import { SectionTitle } from "../common";
 import Image from "next/image";
-
-const about = {
-  title:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem odio est perspiciatis molestias sit! Sed doloremque deserunt nonofficiis rerum, repudiandae incidunt, vero unde suscipit autem hicanimi qui consectetur!",
-  description:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem odio est perspiciatis molestias sit! Sed doloremque deserunt nonofficiis rerum, repudiandae incidunt, vero unde suscipit autem hicanimi qui consectetur!",
-  skills: [
-    "JavaScript (ES6+)",
-    "TypeScript",
-    "React",
-    "Redux",
-    "Node.js",
-    "Express",
-    "MongoDB",
-    "PostgreSQL",
-  ],
-  ImageLink:
-    "https://res.cloudinary.com/myfinance/image/upload/v1680388105/media/Users/xxx/8_nh46zh.webp",
-};
+import { SectionTitle } from "../common";
+import { about } from "@/data/config";
 
 const About = () => {
   return (

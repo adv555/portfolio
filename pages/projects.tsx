@@ -1,12 +1,10 @@
 import React from "react";
-import Page from "@/components/utility/Page";
-import Heading from "@/components/projects/Heading";
-import Projects from "@/components/projects/Projects";
-import More from "@/components/projects/More";
+import { PageLayout } from "@/components/common";
+import { Heading, Projects, More } from "@/components/projects";
 
 function projects() {
   return (
-    <Page
+    <PageLayout
       currentPage="Projects"
       meta={{
         title: "Projects",
@@ -16,7 +14,7 @@ function projects() {
       <Heading />
       <Projects />
       {/* <More /> */}
-    </Page>
+    </PageLayout>
   );
 }
 

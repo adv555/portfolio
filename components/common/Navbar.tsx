@@ -1,6 +1,8 @@
 import React from "react";
 import Link from "next/link";
-import { routes } from "@/data/routes";
+import { navLinks, siteName } from "@/data/config";
+import Image from "next/image";
+import { resume } from "@/data/config";
 
 type NavbarProps = {
   currentPage: string;
@@ -12,12 +14,14 @@ function Navbar({ currentPage }: NavbarProps) {
       <div className="list-none font-bold text-lg cursor-pointer">
         <Link href="/">
           <span className="font-black text-xl flex items-center">
-            <img
+            <Image
               className="mr-2 transform hover:rotate-360 hover:scale-75 transition-transform duration-500"
               src="/logos/logo_no_text.svg"
-              width="60"
+              width={60}
+              height={60}
+              alt="logo"
             />
-            {"Adv555".split("").map((letter, index) => {
+            {siteName.split("").map((letter, index) => {
               return (
                 <span
                   key={index}
@@ -32,7 +36,7 @@ function Navbar({ currentPage }: NavbarProps) {
       </div>
       <div className="flex items-center">
         <ul className="flex items-center space-x-10">
-          {routes.map((item, index) => {
+          {navLinks.map((item, index) => {
             return (
               <li
                 key={index}
@@ -48,7 +52,7 @@ function Navbar({ currentPage }: NavbarProps) {
           })}
         </ul>
         <Link
-          href="/resume.pdf"
+          href={resume}
           target="_blank"
           rel="noopener noreferrer"
           className="ml-10 border border-fun-pink text-center w-full px-6 py-2 rounded-lg text-fun-pink hover:bg-fun-pink hover:text-white transition-colors cursor-pointer "

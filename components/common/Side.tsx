@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { CSSTransition, TransitionGroup } from "react-transition-group";
 import styled from "styled-components";
 import { loaderDelay } from "@/utils";
 import usePrefersReducedMotion from "@/hooks/usePrefersReducedMotion";
@@ -42,23 +41,7 @@ const Side = ({ children, isHome, orientation }: SideProps) => {
   }, []);
 
   return (
-    <StyledSideElement orientation={orientation}>
-      {children}
-      {/* {prefersReducedMotion ? (
-        <>{children}</>
-      ) : (
-        <TransitionGroup component={null}>
-          {isMounted && (
-            <CSSTransition
-              classNames={isHome ? "fade" : ""}
-              timeout={isHome ? loaderDelay : 0}
-            >
-              {children}
-            </CSSTransition>
-          )}
-        </TransitionGroup>
-      )} */}
-    </StyledSideElement>
+    <StyledSideElement orientation={orientation}>{children}</StyledSideElement>
   );
 };
 

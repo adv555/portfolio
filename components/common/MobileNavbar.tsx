@@ -1,7 +1,7 @@
-import { SVGProps, useEffect, useState } from "react";
-// import useDelayedRender from "use-delayed-render";
 import Link from "next/link";
-import { routes } from "@/data/routes";
+import Image from "next/image";
+import { SVGProps, useEffect, useState } from "react";
+import { navLinks, resume, siteName } from "@/data/config";
 import useDelayedRender from "@/hooks/useDelayRender";
 
 export default function MobileNavbar() {
@@ -40,8 +40,14 @@ export default function MobileNavbar() {
       >
         <li className=" list-none font-bold text-lg">
           <Link className="flex justify-center items-center" href="/">
-            <img className="mr-3" src="/logos/logo_no_text.svg" width="60" />
-            <p>BoldishevaOV</p>
+            <Image
+              className="mr-3"
+              src="/logos/logo_no_text.svg"
+              width={60}
+              height={60}
+              alt="logo"
+            />
+            <p>{siteName}</p>
           </Link>
         </li>
         <button
@@ -59,7 +65,7 @@ export default function MobileNavbar() {
           className={`menu flex flex-col absolute bg-bg
             ${isMenuRendered && "menuRendered"}`}
         >
-          {routes.map((item, index) => {
+          {navLinks.map((item, index) => {
             return (
               <li
                 key={index}
@@ -72,6 +78,14 @@ export default function MobileNavbar() {
               </li>
             );
           })}
+          <Link
+            href={resume}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="border border-fun-pink text-center w-full px-6 py-2 rounded-lg text-fun-pink hover:bg-fun-pink hover:text-white transition-colors cursor-pointer "
+          >
+            Resume
+          </Link>
         </ul>
       )}
     </nav>

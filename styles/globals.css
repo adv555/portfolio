@@ -294,3 +294,46 @@ body::-webkit-scrollbar-thumb {
     z-index: -1;
   }
 }
+
+/* Side Social & Email Sections */
+.socials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  max-height: 300px;
+
+  &:after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 90px;
+    margin: 0 auto;
+    background-color: #00c7ff;
+  }
+
+  li {
+    height: 25px;
+    margin-bottom: 10px;
+    &:last-of-type {
+      margin-bottom: 50px;
+    }
+
+    a {
+      padding: 10px;
+
+      /* &:hover,
+      &:focus {
+        transform: translateY(-5px);
+        color: #00c7ff;
+      } */
+
+      svg {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+}

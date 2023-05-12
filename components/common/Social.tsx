@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import { socialMedia } from "@/data/config";
 import { Side } from "@/components/common";
 import { Icon } from "@/components/icons";
+import { socialMedia } from "@/data/config";
 
 type SocialProps = {
   isHome: boolean;
