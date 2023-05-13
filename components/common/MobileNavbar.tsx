@@ -72,8 +72,8 @@ export default function MobileNavbar() {
                 className="border-b border-gray-900 text-gray-100 text-sm font-semibold"
                 style={{ transitionDelay: `${150 + index * 25}ms` }}
               >
-                <Link href={item.path}>
-                  <p className="flex w-auto pb-4">{item.title}</p>
+                <Link href={item.path} scroll={false} onClick={toggleMenu}>
+                  <span className="flex w-auto pb-4">{item.title}</span>
                 </Link>
               </li>
             );
@@ -83,6 +83,7 @@ export default function MobileNavbar() {
             target="_blank"
             rel="noopener noreferrer"
             className="border border-fun-pink text-center w-full px-6 py-2 rounded-lg text-fun-pink hover:bg-fun-pink hover:text-white transition-colors cursor-pointer "
+            onClick={toggleMenu}
           >
             Resume
           </Link>

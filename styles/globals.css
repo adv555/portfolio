@@ -229,12 +229,6 @@ body::-webkit-scrollbar-thumb {
   @apply absolute z-[-10];
 }
 
-/* Section */
-
-.section {
-  @apply container m-auto h-screen flex flex-col relative;
-}
-
 /* About Image  */
 
 .wrapper {

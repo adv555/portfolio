@@ -1,4 +1,4 @@
-export const siteName = "BoldyshevaOV";
+export const siteName = "";
 export const email = "adv55577@gmail.com";
 export const gitHub = "#";
 export const resume = "/resume.pdf";

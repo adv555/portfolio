@@ -69,7 +69,7 @@ function PageLayout({
           // content="https://braydentw.io/static/misc/og.png"
         />
 
-        <meta property="twitter:card" content="summary_large_image" />
+        {/* <meta property="twitter:card" content="summary_large_image" /> */}
         {/* <meta property="twitter:url" content="https://braydentw.io/" /> */}
         <meta property="twitter:title" content={pageTitle} />
         <meta property="twitter:description" content={desc} />

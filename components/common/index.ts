@@ -1,5 +1,5 @@
 import PageLayout from "./PageLayout";
-import SectionTitle from "./SectionTitle";
+import SectionLayer from "./SectionLayer";
 import ProjectCard from "./ProjectCard";
 import Navbar from "./Navbar";
 import MobileNavbar from "./MobileNavbar";
@@ -10,7 +10,7 @@ import Footer from "./Footer";
 
 export {
   PageLayout,
-  SectionTitle,
+  SectionLayer,
   ProjectCard,
   Navbar,
   MobileNavbar,
