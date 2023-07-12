@@ -15,7 +15,7 @@ const StyledSocialList = styled.ul`
   margin: 0;
   padding: 0;
   list-style: none;
-  max-height: 300px;
+  max-height: 350px;
 
   &:after {
     content: "";
@@ -28,9 +28,9 @@ const StyledSocialList = styled.ul`
 
   li {
     height: 25px;
-    margin-bottom: 10px;
+    margin-bottom: 25px;
     &:last-of-type {
-      margin-bottom: 50px;
+      margin-bottom: 70px;
     }
 
     a {
@@ -53,9 +53,8 @@ const StyledSocialList = styled.ul`
 const Social = ({ isHome }: SocialProps) => (
   <Side isHome={isHome} orientation="left">
     <StyledSocialList>
-      {socialMedia &&
-        socialMedia.map(({ url, name }, i) => (
-          <li key={i}>
+      { socialMedia?.map(({ url, name }) => (
+          <li key={name}>
             <a
               href={url}
               aria-label={name}

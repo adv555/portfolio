@@ -13,7 +13,7 @@ function projects() {
     >
       <Heading />
       <Projects />
-      {/* <More /> */}
+      <More />
     </PageLayout>
   );
 }

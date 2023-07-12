@@ -1,71 +1,67 @@
-export const siteName = "";
-export const email = "adv55577@gmail.com";
-export const gitHub = "#";
-export const resume = "/resume.pdf";
+export const siteName = 'MyFolio';
+export const email = 'al.boldysheva@gmail.com';
+export const gitHub = 'https://github.com/adv555';
+export const resume = '/resume.pdf';
 // export const resume =
 //   "https://drive.google.com/file/d/1PjsTHLMZ-6cmeQOgCOm9AcFpCpA9npAo/view?usp=sharing";
 
 export const socialMedia = [
   {
-    name: "GitHub",
-    url: "#",
+    name: 'GitHub',
+    url: 'https://github.com/adv555',
   },
   {
-    name: "Instagram",
-    url: "#",
+    name: 'Linkedin',
+    url: 'https://www.linkedin.com/in/helen-boldysheva',
   },
   {
-    name: "Twitter",
-    url: "#",
+    name: 'Telegram',
+    url: 'https://t.me/adv555',
   },
   {
-    name: "Linkedin",
-    url: "#",
-  },
-  {
-    name: "Codepen",
-    url: "#",
+    name: 'Codepen',
+    url: 'https://codepen.io/adv555',
   },
 ];
 
 export const navLinks = [
   {
-    title: "Home",
-    path: "/",
+    title: 'Home',
+    path: '/',
   },
   {
-    title: "About",
-    path: "/#about",
+    title: 'About',
+    path: '/#about',
   },
   {
-    title: "Skills",
-    path: "/#skills",
+    title: 'Skills',
+    path: '/#skills',
   },
   {
-    title: "Projects",
-    path: "/#projects",
+    title: 'Projects',
+    path: '/#projects',
   },
   {
-    title: "Contact",
-    path: "/#contact",
+    title: 'Contact',
+    path: '/#contact',
   },
 ];
 
 export const about = {
   title:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem odio est perspiciatis molestias sit! Sed doloremque deserunt nonofficiis rerum, repudiandae incidunt, vero unde suscipit autem hicanimi qui consectetur!",
+    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem odio est perspiciatis molestias sit! Sed doloremque deserunt nonofficiis rerum, repudiandae incidunt, vero unde suscipit autem hicanimi qui consectetur!',
   description:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem odio est perspiciatis molestias sit! Sed doloremque deserunt nonofficiis rerum, repudiandae incidunt, vero unde suscipit autem hicanimi qui consectetur!",
+    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem odio est perspiciatis molestias sit! Sed doloremque deserunt nonofficiis rerum, repudiandae incidunt, vero unde suscipit autem hicanimi qui consectetur!',
   skills: [
-    "JavaScript (ES6+)",
-    "TypeScript",
-    "React",
-    "Redux",
-    "Node.js",
-    "Express",
-    "MongoDB",
-    "PostgreSQL",
+    'JavaScript',
+    'TypeScript',
+    'React',
+    'Redux',
+    'Node.js',
+    'Nest.js',
+    'Python',
+    'Django',
   ],
   ImageLink:
-    "https://res.cloudinary.com/myfinance/image/upload/v1680388105/media/Users/xxx/8_nh46zh.webp",
+    'https://res.cloudinary.com/myfinance/image/upload/v1689189339/photo_aybilf.jpg',
 };
