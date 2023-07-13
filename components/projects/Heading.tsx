@@ -24,9 +24,7 @@ function Heading({ tag }: HeadingProps) {
       )}
       {!tag && (
         <p className="text-fun-gray text-xl sm:text-2xl max-w-3xl m-auto">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et dicta,
-          illo placeat est ducimus quis. Numquam, quisquam doloremque!
-          Laudantium, odit.
+          Welcome to my coding world! Get ready to explore an exciting array of projects that highlight my love for coding and expertise in utilizing tools like React, NextJS, Tailwind, and many more.
         </p>
       )}
     </div>

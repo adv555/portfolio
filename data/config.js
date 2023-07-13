@@ -1,4 +1,4 @@
-export const siteName = 'MyFolio';
+export const siteName = 'ABoldysheva';
 export const email = 'al.boldysheva@gmail.com';
 export const gitHub = 'https://github.com/adv555';
 export const resume = '/resume.pdf';
@@ -48,10 +48,9 @@ export const navLinks = [
 ];
 
 export const about = {
-  title:
-    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem odio est perspiciatis molestias sit! Sed doloremque deserunt nonofficiis rerum, repudiandae incidunt, vero unde suscipit autem hicanimi qui consectetur!',
+  title: 'Software Engineer | Creating Exceptional Digital Experiences',
   description:
-    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem odio est perspiciatis molestias sit! Sed doloremque deserunt nonofficiis rerum, repudiandae incidunt, vero unde suscipit autem hicanimi qui consectetur!',
+    'Hello! My name is Alyona, and I am a passionate software engineer with a strong affinity for crafting extraordinary digital experiences. I thrive on building dynamic and efficient web applications, utilizing technologies such as JavaScript, TypeScript, React, Redux, Node.js, Nest.js, Python, and Django. With a focus on delivering high-quality, user-centered products, I prioritize accessibility and usability in all my projects. Join me on this exciting journey of creating exceptional digital experiences that make a positive impact.',
   skills: [
     'JavaScript',
     'TypeScript',

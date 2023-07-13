@@ -17,9 +17,12 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
       <a
         href={project.link || project.github}
         target="_blank"
-        className={`w-full relative rounded-xl border-fun-gray border p-2 transition hover:-translate-y-2 hover:opacity-75 hover:border-fun-pink will-change-projectCard`}
+        className={`w-full relative rounded-xl  border-fun-gray border p-2 transition hover:-translate-y-2 hover:opacity-75 hover:border-fun-pink will-change-projectCard`}
       >
-        <img className="w-full rounded-md" src={project.img} />
+        <img
+          className="w-full rounded-md h-44 md:h-24 lg:h-36 xl:h-40"
+          src={project.img}
+        />
       </a>
       <div className="w-full mt-5">
         <div className="flex projects-center justify-between">
